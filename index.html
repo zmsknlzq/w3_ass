@@ -1,0 +1,181 @@
+<!-- Ristorante -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 3 assignment</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <!-- Embed font from Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+    rel="stylesheet">
+    <!--  -->
+
+  </head>
+  <body>
+    <header>
+      <!-- Using navbar and navbar default classes provided by Bootstrap -->
+      <nav id="header-nav" class="navbar navbar-default">
+        <!-- div.container inside nav to constrain its width -->
+        <div class="container">
+          <div class="navbar-header">
+            <!-- class='pull-left' is float left in Bootstrap -->
+            <!-- we set this to make the h1 below align with upper logo -->
+            <!-- we add visibility of the logo for large and medium
+            screens only  -->
+            <a href="index.html" class="pull-left visible-lg visible-md">
+              <div id="logo-img" alt="Logo"></div>
+            </a>
+            <!-- Name of the company in navbar-brand -->
+            <div class="navbar-brand">
+              <a href="index.html">
+                <h1>FOOD, LLC</h1>
+              </a>
+            </div>
+            <!-- BUTTON IN HEADER FOR COLLAPSIBLE MENU, i.e., it shows up when
+            the view is squeezed to 760 or so -->
+            <!-- Use BS class navbar-toggle -->
+            <!-- data- are JS plugins (see JS code in its folder)-->
+            <!-- aria expanded is related to screen readers -->
+            <!-- data-target starts with # to make it an id -->
+            <!-- all these properties also apply to the collapsible
+            menu below -->
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse" data-target="#collapsible-nav"
+            aria-expanded="false">
+            <!-- sr-only means it won't show up on browser screens -->
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          </div>
+          <!-- COLLAPSIBLE MENU -->
+          <!-- classes as per BS documentation -->
+          <div id="collapsible-nav" class="collapse navbar-collapse">
+            <!-- list of items in the menu (commonly an unordered list) -->
+            <!-- classes: nav and navbar-nav mean that the element is
+            a component of the navigation bar, turning ul into nicely
+            formatted menu-->
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li>
+                <a href="catalogo.html">
+                  <!-- We use glyphicon to make vector image behave as text
+                  (see https://getbootstrap.com/docs/3.3/components/)-->
+                  <!-- We use a <br> that disappears when the screensize
+                  is extrasmall (xs)-->
+                  <span class="glyphicon glyphicon-list-alt"></span>
+                  <br class="hidden-xs">
+                  Sushi
+                </a>
+              </li>
+              <li>
+                <a href="chi-siamo.html">
+                  <span class="glyphicon glyphicon-question-sign"></span>
+                  <br class="hidden-xs">
+                  Beef
+                </a>
+              </li>
+              <li>
+                <a href="http://www.pedone.eu/information/">
+                  <span class="glyphicon glyphicon-pawn"></span>
+                  <br class="hidden-xs">
+                  Sushi
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Container for what is between header and footer -->
+    <!-- Using BS Jumbotron -->
+    <div id="main-content" class="container">
+      <h2 id="title" class="text-center">
+      Our menu
+      </h2>
+      <section class="row col-xs-12">
+
+      </section>
+    </div> <!--End of main content-->
+
+    <!-- 成年、未成年、分析评论 -->
+      <div id="three-img-row" class="row">
+        <!-- For desktop, each image 1/3 of screen -->
+        <!-- For tablet, two img above 1/2 one below 100% of screen -->
+        <!-- For smartphone, each 100% -->
+        <!-- PER UN PUBBLICO MATURO 成年漫画 -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="cn.html">
+            <div id="cn">
+              <span>PER UN PUBBLICO MATURO <br> 成年漫画</span>
+            </div>
+          </a>
+        </div>
+        <!-- ADATTI AI MINORI 未成年漫画 -->
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="wcn.html">
+            <div id="wcn">
+              <span>ADATTI AI MINORI <br> 未成年漫画</span>
+            </div>
+          </a>
+        </div>
+        <!-- ANALISI E RECENSIONI 分析、评论-->
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <a href="fxpl.html">
+            <div id="fxpl">
+              <span>ANALISI E RECENSIONI <br> 分析、评论</span>
+            </div>
+          </a>
+        </div>
+      </div> <!--End of div#three-img-row-->
+  </div> <!-- End of div#main-content -->
+  <footer class="panel-footer">
+    <div class="container">
+      <div class="row">
+        <!--Three secondary sections here:
+      further services, cooperate with us, legal matters-->
+        <section id="further-services" class="col-sm-4">
+          <span>Traduzioni</span><br>
+          Per traduzioni cinese-italiano<br>
+          di vario ambito, scrivi a<br>
+          <a href="mailto:pedonezs@outlook.com">
+            Traduzioni Pedone
+          </a>
+          <hr class="visible-xs">
+        </section> <!--End of further services-->
+        <section id="co-ops" class="col-sm-4">
+          <span>Collaborazioni</span><br>
+          Per collaborare con Pedone<br>
+          scrivi a<br>
+          <a href="mailto:itpedone@outlook.com">
+            Segreteria Pedone
+          </a>
+          <hr class="visible-xs">
+        </section> <!--End of cooperate with us-->
+        <section id="legal-matters" class="col-sm-4">
+          <span>Affari legali</span><br>
+          Per visionare lo statuto<br>
+          di Pedone o altre informazioni legali<br>
+          <a href="http://www.pedone.eu/information/">
+            clicca qui!
+          </a>
+          <hr class="visible-xs">
+        </section> <!--End of legal matters-->
+      </div>
+      <div class="text-center">&copy; Copyright Associazione Pedone per
+        Interscambio Culturale 2022
+      </div>
+    </div>
+  </footer>
+    <!-- jQuery (Bootstrap JS plugins depend on it) -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
