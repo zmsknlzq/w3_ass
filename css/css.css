@@ -12,15 +12,6 @@ body {
   border: 0;
 }
 
-/* logo */
-#logo-img {
-  background: url("../images/logo.png") no-repeat;
-  background-size: contain;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-brand {
   padding-top: 25px;
 }
@@ -40,16 +31,6 @@ body {
 /* Prevent link underlining */
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
-}
-
-.navbar-brand p { /*ALternative logo*/
-  color: white;
-  font-size: .7em;
-  margin-top: 15px;
-}
-
-.navbar-brand p span { /*行人漫画*/
-  vertical-align: middle;
 }
 
 /* id nav list is our html anchor to style the whole ul */
@@ -76,49 +57,13 @@ body {
 /* When the menu collapses, the following code prevents its collapse to
 change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
-.navbar-header button.navbar-toggle {
+#collnavbutt {
   clear: both;
   margin: auto;
 }
 /* Header end */
 
-/*Footer*/
-.panel-footer { /*This overrides (merging with) BS class*/
-  margin-top: 30px;
-  padding-top: 35px;
-  padding-bottom: 30px;
-  background-color: #0ac2ac;
-  color: white;
-  border-top: 0;
-  font-weight: bold;
-}
-
-.panel-footer div.row {
-  margin-bottom: 35px;
-}
-
-.panel-footer a {
-  color: white;
-  text-shadow: 1px 1px 1px #000;
-}
-
-.panel-footer a:hover {
-  text-decoration: none;
-  background: black;
-  color: white;
-}
-
-#further-services, #co-ops, #legal-matters {
-  line-height: 2; /*interlinea*/
-}
-
-#further-services > span, #co-ops > span, #legal-matters > span {
-  font-size: 1.3em;
-}
-
-/*End footer*/
-
-/* Body container */
+/* Main content */
 div#main-content section {
   height: 1000px;
   background-color: yellow;
@@ -127,208 +72,7 @@ div#main-content section {
   margin-right: auto;
 }
 
-/*Style the three images linking to chegnian, weichengnian and fenxipinglun*/
-#cn, #wcn, #fxpl {
-  height: 250px;
-  width: 100%; /*of what allowed by col classes in div*/
-  margin-top: 5px;
-  margin-bottom: 15px; /*to separate it from the footer*/
-  position: relative; /*to position elements within it as absolute*/
-  border: 2px solid gray;
-  overflow: hidden; /*clip anything that would overflow*/
-}
-
-/*Add effect when hovering*/
-#cn:hover, #wcn:hover, #fxpl:hover {
-  box-shadow: 0 1px 5px 1px #0ac2ac;
-  color: white;
-  background-color: #0ac2ac;
-  font-weight: bold;
-}
-
-/*Add background images to three spaces*/
-#cn {
-  background: url('../images/chengnian.PNG') no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-#wcn {
-  background: url('../images/weichengnian.PNG') no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-#fxpl {
-  background: url('../images/pinglun.PNG') no-repeat;
-  background-position: center;
-  background-size: contain;
-}
-
-/*Reposition and style the little titles inside the three images*/
-#cn span, #wcn span, #fxpl span {
-  position: absolute;
-  bottom: 50%;
-  width: 100%;
-  text-align: center;
-  font-size: 1.6em;
-  text-transform: uppercase;
-  background-color: #0ac2ac;
-  color: white;
-  opacity: .8;
-}
-
-/*Catalogo.html*/
-div.text-center {
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-.genere {
-  position: relative;
-  border: 2px solid gray;
-  overflow: hidden;
-  /*automatically center something by giving it width, height and
-  auto right and left margins*/
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 15px; /*auto is assumed as def for fourth parameter*/
-}
-
-.genere span {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  background-color: #0ac2ac;
-  opacity: .8;
-  text-shadow: 1px 1px 1px #000;
-  font-weight: bold;
-}
-
-.genere:hover {
-  box-shadow: 0 1px 5px 1px #0ac2ac;
-}
-
-
-/* Stile per le pagine dedicate alle singole categorie */
-#nome-del-genere {
-  margin-bottom: 25px;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.fumetto {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.fumetto hr {
-  width: 80%;
-}
-
-.fumetto .prezzo {
-  font-size: 1.1em;
-  text-align: right;
-  margin-top: -15px;
-  margin-right: -15px;
-}
-
-.fumetto .prezzo span {
-  font-size: .6em;
-}
-
-div.copertina {
-  position: relative;
-  border: 2px solid #0ac2ac;
-  overflow: hidden;
-  padding: 0;
-  max-width: 200px;
-  margin-right: -15px;
-  margin-left: auto;
-  margin-bottom: 20px;
-}
-
-.copertina div {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
-  background-color: #0ac2ac;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  opacity: .8;
-  font-size: .6em;
-}
-
-.descrizione-del-fumetto {
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-h3.titolo-fumetto-in-singolo-genere {
-  margin: 0 0 10px;
-}
-
-.descrizione-dettagliata {
-  font-size: .9em;
-  font-style: italic;
-  text-align: justify;
-}
-/*End of gufeng styles*/
-
 /*MEDIA QUERIES*/
-/* Large devices */
-@media (min-width: 1200px) {
-  /*Body container*/
-  .container .Jumbotron {
-    background: url("../images/sfondo1200.png") no-repeat;
-    height: 675px;
-  }
-  /*End of body container*/
-}
-/* Medium devices */
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Header start */
-  #logo-img {
-    background: url("../images/logo_medio.png") no-repeat;
-    background-size: contain;
-    width: 100px;
-    height: 100px;
-    margin: 5px 15px 5px 0;
-  }
-  .navbar-brand p img { /*Comic bubble*/
-    height: 50px;
-  }
-  /* Header end */
-  /*Body container*/
-  .container .Jumbotron {
-    background: url("../images/sfondo992.png") no-repeat;
-    height: 558px;
-  }
-  /*End body container*/
-}
-/* Small devices */
-@media (min-width: 768px) and (max-width: 991px) {
-/*Header start*/
-.navbar-brand p img { /*Comic bubble*/
-  height: 35px;
-}
-/*Header end*/
-/*Body container*/
-.container .Jumbotron {
-  background: url("../images/sfondo768.png") no-repeat;
-  height: 432px;
-}
-/*End body container*/
-}
 
 /* Xsmall devices */
 @media (max-width: 767px) {
@@ -337,89 +81,8 @@ h3.titolo-fumetto-in-singolo-genere {
   padding-top: 10px;
   height: 80px;
 }
-.navbar-brand h1 { /*PEDONE FUMETTI CINESI*/
+.navbar-brand h1 {
   padding-top: 10px;
-  font-size: 5vw; /*1vw = 1% of the width of the viewport*/
+  font-size: 5vw;
 }
-.navbar-brand p { /*行人漫画*/
-  font-size: .6em;
-  margin-top: 12px;
-}
-.navbar-brand p img { /*Comic bubble*/
-  height: 20px;
-}
-/* Add right margin to glyphicons in collapsible menu */
-#collapsible-nav a span { /*Each glyphicon*/
-  margin-right: 5px;
-}
-/* Header end */
-/*Solve borders too large when xsmall*/
-#cn, #wcn, #fxpl {
-  width: 360px;
-  margin: 0 auto 15px;
-}
-/*End body container*/
-
-/*Specific touches for single-genre pages*/
-
-div.copertina {
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-}
-
-.fumetto .prezzo {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
-}
-
-.descrizione-del-fumetto {
-  text-align: center;
-}
-
-} /*End of settings for xsmall screens*/
-
-/* Extremely extra-small devices (e.g., iPhone 4)*/
-@media (max-width: 392px) {
-  /*Header*/
-  .navbar-brand h1 {/*Restaurant name*/
-    padding-top: 5px;
-    font-size: 6vw;
-  }
-  /*Footer*/
-  .panel-footer section {
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .panel-footer section:nth-child(3) {
-    margin-bottom: 0; /*margin already on whole row*/
-  }
-
-  .panel-footer section hr {
-    width: 50%;
-  }
-  /*Body*/
-  #cn, #wcn, #fxpl {
-    width: 362px;
-    margin: 0 auto 15px; /*see note here below*/
-    /*second param is repeated by def at fourth, so this equals*/
-    /*margin: 0 auto 15px auto;*/
-    /*this formula is useful to center things*/
-  }
-
-  /*Special class to add to those of BS for extremely
-  extrasmall screen column control
-  (modelled on extrasmall in BS; understanding
-  its parameters does not matter here)*/
-  .col-xxs-12 {
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left;
-    width: 100%;
-  }
 }
