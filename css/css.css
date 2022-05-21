@@ -42,6 +42,10 @@ body {
   padding: 5px;
 }
 
+li {
+  border: 1px solid black;
+}
+
 /* When the menu collapses, the following code prevents its collapse to
 change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
