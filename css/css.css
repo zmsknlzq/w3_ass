@@ -57,7 +57,7 @@ body {
 /* When the menu collapses, the following code prevents its collapse to
 change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
-#collnavbutt {
+#bootstrap-overrides {
   clear: both;
   margin: -100 -100 10 0;
   width: auto;
