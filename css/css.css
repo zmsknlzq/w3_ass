@@ -122,6 +122,9 @@ to reduce header space */
 div#main-content section {
   height: 1000px;
   background-color: yellow;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Style the three images linking to chegnian, weichengnian and fenxipinglun*/
