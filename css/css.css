@@ -37,10 +37,6 @@ body {
 /* id nav list is our html anchor to style the whole ul */
 #nav-list {
   margin-top: 5px;
-}
-
-/* format menu links */
-#nav-list a {
   font-family: 'Roboto', sans-serif;
   color: white;
   text-shadow: 1px 1px 1px #000;
