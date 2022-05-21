@@ -68,6 +68,7 @@ to reduce header space */
 
 /* Main content */
 div#main-content section {
+  text-align: center;
   height: 1000px;
   background-color: yellow;
   width: 100%;
