@@ -52,8 +52,8 @@ to reduce header space */
   clear: both;
   margin: -50px 100px 10px 0;
   width: auto;
-  height: 120px;
-  width: 120px;
+  height: 70px;
+  width: 70px;
   background-color: red;
   color: black;
 }
