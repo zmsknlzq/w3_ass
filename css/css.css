@@ -78,7 +78,7 @@ change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin: auto;
 }
 /* Header end */
 
