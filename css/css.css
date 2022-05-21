@@ -29,11 +29,6 @@ body {
   line-height: .75;
 }
 
-/* Prevent link underlining */
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
 /* id nav list is our html anchor to style the whole ul */
 #nav-list {
   margin-top: 5px;
