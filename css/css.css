@@ -59,7 +59,7 @@ change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
 #collnavbutt {
   clear: both;
-  margin: -50px -100px 0 50px;
+  margin: 5px -10px 0 5px;
   width: auto;
   background-color: red;
   color: black;
