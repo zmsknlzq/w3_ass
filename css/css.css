@@ -7,9 +7,10 @@ body {
 
 /* header */
 #header-nav {
-  background-color: #0ac2ac; /*行人网站绿色*/
+  background-color: #0ac2ac;
   border-radius: 0;
   border: 0;
+  height: auto;
 }
 
 .navbar-brand {
@@ -59,7 +60,7 @@ change the positioning of surrounding elements. Also give neg margin top
 to reduce header space */
 #collnavbutt {
   clear: both;
-  margin: -80px 100px 10px 0;
+  margin: -75px 100px 10px 0;
   width: auto;
   background-color: red;
   color: black;
