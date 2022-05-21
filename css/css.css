@@ -45,14 +45,10 @@ body {
   color: white;
   text-shadow: 1px 1px 1px #000;
   text-align: center;
-}
-
-#nav-list a:hover {
-  background: black;
-}
-
-#nav-list a span {
-  font-size: 125%
+  background-color: red;
+  color: black;
+  text-align: center;
+  padding: 5px;
 }
 
 /* When the menu collapses, the following code prevents its collapse to
